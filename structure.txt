@@ -1,0 +1,198 @@
+/frontend
+│
+├── /public
+│   ├── /assets
+│   │   ├── /images
+│   │   │   ├── logo.png
+│   │   │   ├── background.jpg
+│   │   │   └── icons.svg
+│   │   ├── /icons
+│   │   │   ├── user.svg
+│   │   │   ├── settings.svg
+│   │   │   └── report.svg
+│   │   ├── /fonts
+│   │   │   └── OpenSans-Regular.ttf
+│   │   └── /styles
+│   │       ├── global.css
+│   │       ├── themes
+│   │       │   ├── dark-theme.css
+│   │       │   └── light-theme.css
+│   │       └── responsive.css
+│   ├── index.html
+│   └── favicon.ico
+│
+├── /src
+│   ├── /components
+│   │   ├── /common
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── Sidebar.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── NotificationBadge.tsx
+│   │   │   ├── UserProfile.tsx
+│   │   │   ├── SearchBar.tsx
+│   │   │   ├── AdvancedFilter.tsx
+│   │   │   ├── Modal.tsx
+│   │   │   ├── Tooltip.tsx
+│   │   │   ├── Card.tsx
+│   │   │   └── Breadcrumbs.tsx
+│   │   ├── /dashboard
+│   │   │   ├── EmissionOverview.tsx
+│   │   │   ├── CarbonSinksAnalysis.tsx
+│   │   │   ├── PathwaysSimulation.tsx
+│   │   │   ├── TrendsVisualization.tsx
+│   │   │   ├── EmissionHeatMap.tsx
+│   │   │   ├── SimulationControls.tsx
+│   │   │   ├── CarbonSinkMapping.tsx
+│   │   │   ├── RenewableEnergyAnalysis.tsx
+│   │   │   ├── EmissionReductionSimulator.tsx
+│   │   │   ├── ImpactAssessment.tsx
+│   │   │   ├── ElectricityConsumptionAnalysis.tsx
+│   │   │   ├── CoalUsageEstimation.tsx
+│   │   │   ├── PlantationNeedsCalculator.tsx
+│   │   │   ├── EmissionForecasting.tsx
+│   │   │   ├── AnomalyDetection.tsx
+│   │   │   └── CostBenefitAnalysis.tsx
+│   │   ├── /admin
+│   │   │   ├── UserManagement.tsx
+│   │   │   ├── DataImport.tsx
+│   │   │   ├── SystemSettings.tsx
+│   │   │   ├── LogsManagement.tsx
+│   │   │   ├── PermissionSettings.tsx
+│   │   │   ├── BackupAndRestore.tsx
+│   │   │   ├── RegulatoryCompliance.tsx
+│   │   │   ├── NotificationSettings.tsx
+│   │   │   ├── IntegrationSettings.tsx
+│   │   │   └── APIKeysManagement.tsx
+│   │   ├── /reporting
+│   │   │   ├── EmissionReport.tsx
+│   │   │   ├── OffsetReport.tsx
+│   │   │   ├── PerformanceMetrics.tsx
+│   │   │   ├── CustomReportGenerator.tsx
+│   │   │   ├── ReportScheduler.tsx
+│   │   │   └── PublicDashboard.tsx
+│   │   ├── /analysis
+│   │   │   ├── EmissionEstimation.tsx
+│   │   │   ├── Forecasting.tsx
+│   │   │   ├── AnomalyDetection.tsx
+│   │   │   ├── ScenarioAnalysis.tsx
+│   │   │   ├── SensitivityAnalysis.tsx
+│   │   │   ├── StatisticalAnalysis.tsx
+│   │   │   ├── HistoricalDataAnalysis.tsx
+│   │   │   ├── DynamicGoalTracking.tsx
+│   │   │   ├── PlantationNeedAnalysis.tsx
+│   │   │   └── EmissionImpactModeling.tsx
+│   │   ├── /visualizations
+│   │   │   ├── Charts.tsx
+│   │   │   ├── Maps.tsx
+│   │   │   ├── Dashboards.tsx
+│   │   │   ├── GeospatialAnalysis.tsx
+│   │   │   ├── DataExplorer.tsx
+│   │   │   ├── ImpactModeling.tsx
+│   │   │   ├── CustomVisualizations.tsx
+│   │   │   ├── PlantationVisualization.tsx
+│   │   │   └── TrendLines.tsx
+│   │   ├── /notifications
+│   │   │   ├── AlertSystem.tsx
+│   │   │   ├── NotificationCenter.tsx
+│   │   │   ├── RealTimeUpdates.tsx
+│   │   │   ├── FeedbackForm.tsx
+│   │   │   └── UserAlerts.tsx
+│   │   ├── /integration
+│   │   │   ├── ExternalAPIs.ts
+│   │   │   ├── DataSync.ts
+│   │   │   ├── CarbonCreditIntegration.ts
+│   │   │   ├── GISIntegration.ts
+│   │   │   ├── OffsetMarketplaceIntegration.ts
+│   │   │   ├── TradingPlatformIntegration.ts
+│   │   │   ├── PolicyChangeSimulation.ts
+│   │   │   ├── ComplianceTracker.ts
+│   │   │   ├── ElectricityConsumptionIntegration.ts
+│   │   │   └── PlantationDataIntegration.ts
+│   │   ├── /context
+│   │   │   ├── UserContext.ts
+│   │   │   ├── DataContext.ts
+│   │   │   ├── SettingsContext.ts
+│   │   │   ├── NotificationContext.ts
+│   │   │   ├── AuthContext.ts
+│   │   │   ├── ReportContext.ts
+│   │   │   ├── AnalysisContext.ts
+│   │   │   └── PlantationContext.ts
+│   │   ├── /hooks
+│   │   │   ├── useAuth.ts
+│   │   │   ├── useDataFetch.ts
+│   │   │   ├── useChart.ts
+│   │   │   ├── useMap.ts
+│   │   │   ├── useNotifications.ts
+│   │   │   ├── useSimulation.ts
+│   │   │   ├── useRealTimeTracking.ts
+│   │   │   ├── usePlantation.ts
+│   │   │   └── useCostAnalysis.ts
+│   │   ├── /pages
+│   │   │   ├── Home.tsx
+│   │   │   ├── Login.tsx
+│   │   │   ├── Dashboard.tsx
+│   │   │   ├── Reports.tsx
+│   │   │   ├── Admin.tsx
+│   │   │   ├── Settings.tsx
+│   │   │   ├── Profile.tsx
+│   │   │   ├── Notifications.tsx
+│   │   │   ├── DataImport.tsx
+│   │   │   ├── Help.tsx
+│   │   │   ├── CarbonSinkPlanning.tsx
+│   │   │   ├── CostAnalysis.tsx
+│   │   │   ├── PlantationNeeds.tsx
+│   │   │   ├── PublicReporting.tsx
+│   │   │   └── AdvancedFilters.tsx
+│   │   ├── /services
+│   │   │   ├── apiService.ts
+│   │   │   ├── authService.ts
+│   │   │   ├── dataService.ts
+│   │   │   ├── reportService.ts
+│   │   │   ├── analysisService.ts
+│   │   │   ├── notificationService.ts
+│   │   │   ├── integrationService.ts
+│   │   │   ├── complianceService.ts
+│   │   │   ├── plantationService.ts
+│   │   │   ├── realTimeTrackingService.ts
+│   │   │   └── costAnalysisService.ts
+│   │   ├── /utils
+│   │   │   ├── constants.ts
+│   │   │   ├── helpers.ts
+│   │   │   ├── validation.ts
+│   │   │   ├── calculations.ts
+│   │   │   ├── dataUtils.ts
+│   │   │   ├── formatting.ts
+│   │   │   └── apiUtils.ts
+│   │   ├── /styles
+│   │   │   ├── globalStyles.css
+│   │   │   ├── themeStyles.css
+│   │   │   └── componentStyles.css
+│   │   ├── App.tsx
+│   │   ├── index.tsx
+│   │   └── serviceWorker.ts
+│   │
+└── /docs
+    ├── API_Documentation.md
+    ├── User_Guide.md
+    ├── Technical_Details.md
+    ├── Roadmap.md
+    ├── Deployment_Guide.md
+    ├── Compliance_Guide.md
+    ├── Carbon_Credit_Integration.md
+    ├── Carbon_Offset_Marketplace_Integration.md
+    ├── Policy_Change_Simulation.md
+    ├── RealTime_Tracking.md
+    ├── Scenario_Analysis_Guidelines.md
+    ├── User_Feedback_Integration.md
+    ├── Electricity_Consumption_Analysis.md
+    ├── Coal_Usage_Estimation.md
+    ├── Plantation_Needs_Analysis.md
+    ├── Cost_Benefit_Analysis.md
+    ├── Anomaly_Detection.md
+    ├── Advanced_Analysis_Techniques.md
+    ├── Geospatial_Data_Management.md
+    ├── Public_Reporting_Guidelines.md
+    ├── Data_Visualization_Standards.md
+    ├── Integration_Guidelines.md
+    └── Policy_Impact_Assessment.md
